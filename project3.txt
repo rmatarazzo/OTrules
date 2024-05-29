@@ -26,40 +26,465 @@ Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sente
 Description of Solution:  (should be CONCISE, 3-7 sentences)
 	• Software functions for solving problem(s) step by step.
 	
-	locate and create input list of four (football, basketball, baseball, and hockey) major sports leagues for men/women college and 	professional levels. 
-	locate and input overtime rules for each of the sports leagues.
-	separate overtime rules for preseason, regular season, and playoffs.
-	ask user to enter sport
-	ask user to enter league
-	output to string file
+	1. System Initialization
+Fetch Overtime Rules from API:
+Function: fetch_overtime_rules_api()
+Purpose: Fetch overtime rules data from the API.
+Inputs: None
+Output: Dictionary containing overtime rules, timeouts, challenges, and period duration.
+Store Overtime Rules:
+Function: store_overtime_rules(rules_data)
+Purpose: Store overtime rules data in a local database or in-memory storage.
+Inputs: rules_data (dict)
+Output: None
+2. User Interaction
+Display Input Form:
+Function: display_form()
+Purpose: Display a form for user input in the web app.
+Inputs: None
+Output: None
+Get User Inputs:
+Function: get_user_input(prompt)
+Purpose: Get input from the user regarding the sport, level, league, and season type.
+Inputs: prompt (str)
+Output: user_input (str)
+3. Manual Input Handling
+Validate Sport Input:
+Function: validate_sport_input(sport)
+Purpose: Validate the user input for sports not among the four major ones.
+Inputs: sport (str)
+Output: Boolean (True if valid, False if not)
+4. Fetch and Display Rules
+Fetch Appropriate Rules:
+Function: fetch_rules(sport, level, league, season_type)
+Purpose: Fetch overtime rules using user inputs.
+Inputs: sport (str), level (str), league (str), season_type (str)
+Output: Dictionary containing overtime rules.
+Differentiate Rules by Season Type:
+Function: differentiate_rules_by_season(rules, season_type)
+Purpose: Adjust the displayed rules based on the season type (preseason, regular season, playoffs).
+Inputs: rules (dict), season_type (str)
+Output: adjusted_rules (dict)
+Display Overtime Rules:
+Function: display_overtime_rules(rules)
+Purpose: Display the overtime rules in the web app.
+Inputs: rules (dict)
+Output: None
+5. Additional Information
+Get Timeouts and Challenges Info:
+Function: get_timeouts_and_challenges(rules)
+Purpose: Extract information about timeouts and challenges from the rules data.
+Inputs: rules (dict)
+Output: Dictionary containing timeouts and challenges information.
+6. Countdown Clock
+Start Real-time Countdown Clock:
+Function: start_countdown_clock(duration)
+Purpose: Start a real-time countdown clock for the overtime period.
+Inputs: duration (int, in seconds)
+Output: None
+
 	• Workflow diagram of future ("TO-BE") state (improved processes from your solution).
+	1. System Initialization
+Fetch Overtime Rules from API
+Call fetch_overtime_rules_api().
+Store the fetched data using store_overtime_rules(rules_data).
+2. User Interaction
+Display Input Form
+
+Call display_form() to show the input form on the web app.
+Get User Inputs
+
+Use get_user_input(prompt) to retrieve the user inputs for sport, level, league, and season type.
+3. Manual Input Handling
+Validate Sport Input
+Call validate_sport_input(sport).
+If the input is not valid, prompt the user for correct input.
+4. Fetch and Display Rules
+Fetch Appropriate Rules
+
+Call fetch_rules(sport, level, league, season_type) to retrieve the appropriate rules based on user inputs.
+Differentiate Rules by Season Type
+
+Use differentiate_rules_by_season(rules, season_type) to adjust the rules according to the season type.
+Display Overtime Rules
+
+Call display_overtime_rules(rules) to present the rules on the web app.
+5. Additional Information
+Get Timeouts and Challenges Info
+Use get_timeouts_and_challenges(rules) to extract and display information about timeouts and challenges.
+6. Countdown Clock
+Start Real-time Countdown Clock
+If applicable, call start_countdown_clock(duration) to initiate a real-time countdown clock for the overtime period.
+Graphical Diagram (Mermaid.js)
+
 	• "Minimum Viable Product" (MVP) 1.0 delivered.  (V1.x delivered beyond MVP V1.0?)
 	• Later MVP, i.e., v2, v3, vN+ functionality to be delivered? 
     • Additional requirements, Graphical User Interfaces (GUI), usability, etc. for later versions
     
 Solution Design (high-level):
-	Load a JSON file containing overtime rules for various sports.
-	Create and display a plain-text list of all overtime rules.
-	Allow the user to select a specific sport and league to view the detailed overtime rules for the selected league.
+	Solution Design (High-Level)
+To create a web application that provides users with the current overtime rules for various sports at different levels and leagues, the following high-level solution design outlines the architecture, components, and data flow necessary to achieve the project objectives.
 
+1. Architecture Overview
+The system will be a web-based application composed of three main layers:
+
+Frontend (Client-Side)
+Backend (Server-Side)
+Data Layer
+a. Frontend (Client-Side)
+Technology: HTML, CSS, JavaScript (React or Vue.js)
+Components:
+Input Form: For user to select or input sport, level, league, and season type.
+Display Area: For showing overtime rules, timeouts, challenges, and countdown clock.
+Countdown Clock: A real-time clock displaying the duration of the overtime period.
+b. Backend (Server-Side)
+Technology: Node.js (Express.js) or Python (Django/Flask)
+Components:
+API Fetcher: Fetches overtime rules from external APIs.
+Business Logic: Processes user inputs, validates data, differentiates rules by season type, and fetches the relevant rules.
+Data Storage: Stores and retrieves overtime rules data.
+Real-time Clock Handler: Manages the countdown clock for the overtime period.
+c. Data Layer
+Technology: SQL Database (PostgreSQL) or NoSQL Database (MongoDB)
+Components:
+Overtime Rules Storage: Stores rules data fetched from the API.
+User Inputs: Optionally store user inputs and preferences for analytics and improvement.
+2. Workflow Overview
+User Interaction:
+
+User accesses the web application.
+User selects or inputs sport, level, league, and season type via the input form.
+User submits the form.
+Backend Processing:
+
+Backend receives the user inputs.
+Backend validates the inputs (especially for sports not among the four major ones).
+Backend fetches the relevant overtime rules from the local storage or external API.
+Backend processes the rules to differentiate based on season type (preseason, regular season, playoffs).
+Backend retrieves additional information such as timeouts and challenges.
+Data Presentation:
+
+Backend sends the processed rules and additional information to the frontend.
+Frontend displays the overtime rules, timeouts, challenges, and starts the countdown clock if applicable.
+Real-Time Countdown:
+
+Frontend initiates and displays a real-time countdown clock for the overtime period.
+3. Component Details
+a. Frontend Components
+Input Form Component:
+
+Form fields for sport, level, league, and season type.
+Validation messages for incorrect inputs.
+Submit button to send data to the backend.
+Display Component:
+
+Sections for displaying overtime rules.
+Sections for displaying timeouts and challenges.
+Real-time countdown clock.
+Countdown Clock Component:
+
+JavaScript-based real-time countdown functionality.
+Visual display integrated into the UI.
+b. Backend Components
+API Fetcher:
+
+Function to fetch data from external APIs.
+Function to refresh data periodically or upon user request.
+Business Logic:
+
+Input validation functions.
+Rules differentiation logic based on season type.
+Functions to fetch, store, and process rules data.
+Data Storage:
+
+Database schema for storing overtime rules, timeouts, challenges, and user inputs.
+Real-time Clock Handler:
+
+Functionality to handle real-time operations and synchronization of the countdown clock.
+c. Data Layer Components
+Overtime Rules Storage:
+
+Tables or collections to store fetched rules data.
+Indexing for quick retrieval based on sport, level, league, and season type.
+User Inputs Storage:
+
+Optionally store user inputs for analytics and improvement purposes.
+Data Flow Diagram
+mermaid
+Copy code
+graph TD
+    User[User] -->|1. Select/Input Data| Form[Input Form]
+    Form -->|2. Submit Data| Backend[Backend Server]
+    Backend -->|3. Validate Inputs| Validator[Input Validator]
+    Validator -->|4. Fetch Rules| RulesStorage[Overtime Rules Storage]
+    RulesStorage -->|5. Fetch from API if necessary| API[External API]
+    API -->|6. Store Fetched Rules| RulesStorage
+    RulesStorage -->|7. Process Rules| Processor[Rules Processor]
+    Processor -->|8. Differentiate Rules by Season| Differentiator[Season Differentiator]
+    Differentiator -->|9. Get Timeouts/Challenges| TimeoutHandler[Timeouts/Challenges Handler]
+    TimeoutHandler -->|10. Send Data| Frontend[Frontend]
+    Frontend -->|11. Display Rules| Display[Display Component]
+    Display -->|12. Start Clock if applicable| Clock[Countdown Clock]
+    Clock -->|13. Display Countdown| User
+This high-level design outlines the architecture and workflow of the web application, ensuring all necessary components and interactions are covered. Each component can now be detailed further and implemented accordingly.
+
+
+	
 Solution Code Description (low-level design): 
 	• Describe code (to help users understand it.)
-	-Data Loading:
-	Input: overtime_rules.json (a JSON file containing nested dictionaries of overtime rules).
-	Output: A Python dictionary representing the loaded overtime rules.
-	Process: Read the JSON file and parse its content into a Python dictionary using the json module.
-	-Create Overtime Rules List:
-	Input: The dictionary of overtime rules.
-	Output: A formatted string listing all overtime rules in a human-readable format.
-	Process: Iterate through the nested dictionary, format each rule, and build a list of strings. Finally, join the list into a 	single string with newline characters.
-	-User Selection Interface:
-	Input: User inputs to select a sport and a league.
-	Output: Selected sport and league as strings.
-	Process: Display available sports, prompt user to select a sport, display leagues for the selected sport, prompt user to select a 	league, and return the selected sport and league.
-	-Print Overtime Rules:
-	Input: The dictionary of rules for the selected sport and league.
-	Output: Printed rules in a human-readable format.
-	Process: Format and print each rule in the selected league's rules dictionary.
+	1. Frontend (Client-Side)
+Technology: React (JavaScript)
+
+a. Component Structure
+App Component:
+
+Description: The root component that initializes the app and renders child components.
+Key Functions:
+useEffect: Fetches initial data on load.
+render: Renders the main layout.
+Form Component:
+
+Description: Component for user input to select sport, level, league, and season type.
+Key Functions:
+handleChange: Handles changes in input fields.
+handleSubmit: Submits the form data to the backend.
+State Variables:
+sport, level, league, seasonType: To store user inputs.
+Display Component:
+
+Description: Component to display the overtime rules, timeouts, challenges, and countdown clock.
+Key Functions:
+renderRules: Displays the fetched rules.
+renderTimeoutsChallenges: Displays timeouts and challenges information.
+Props:
+rules, timeoutsChallenges, countdownDuration: Data passed from the parent component.
+Countdown Clock Component:
+
+Description: Component to display a real-time countdown clock for the overtime period.
+Key Functions:
+startClock: Starts the countdown timer.
+updateClock: Updates the countdown display in real-time.
+State Variables:
+timeLeft: Tracks the remaining time for the countdown.
+b. Code Example
+jsx
+Copy code
+// App.js
+import React, { useEffect, useState } from 'react';
+import Form from './Form';
+import Display from './Display';
+import CountdownClock from './CountdownClock';
+
+const App = () => {
+  const [rules, setRules] = useState(null);
+  const [timeoutsChallenges, setTimeoutsChallenges] = useState(null);
+  const [countdownDuration, setCountdownDuration] = useState(null);
+
+  useEffect(() => {
+    // Fetch initial data or perform necessary setup
+  }, []);
+
+  const handleFormSubmit = async (data) => {
+    // Send data to backend and update state with fetched rules and countdown duration
+  };
+
+  return (
+    <div>
+      <Form onSubmit={handleFormSubmit} />
+      {rules && (
+        <Display rules={rules} timeoutsChallenges={timeoutsChallenges} countdownDuration={countdownDuration} />
+      )}
+      {countdownDuration && <CountdownClock duration={countdownDuration} />}
+    </div>
+  );
+};
+
+export default App;
+2. Backend (Server-Side)
+Technology: Node.js with Express
+
+a. Server Structure
+server.js:
+
+Description: Entry point for the backend server, setting up routes and middleware.
+Key Functions:
+app.use: Apply middleware for parsing JSON and handling CORS.
+app.listen: Start the server on a specified port.
+Routes:
+
+Description: Defines API endpoints for handling frontend requests.
+Key Routes:
+POST /fetchRules: Endpoint to fetch overtime rules based on user inputs.
+GET /refreshRules: Endpoint to manually refresh rules from the API.
+Controllers:
+
+Description: Handle business logic for each route.
+Key Controllers:
+fetchRulesController: Validates user inputs and fetches the appropriate rules.
+refreshRulesController: Fetches and stores updated rules from the external API.
+Services:
+
+Description: Interact with external APIs and the database.
+Key Services:
+apiService: Fetches data from the external API.
+dbService: Handles database interactions for storing and retrieving rules.
+Database:
+
+Description: Schema and models for storing rules data.
+Key Models:
+Rules: Schema for storing overtime rules, timeouts, challenges, and season types.
+b. Code Example
+js
+Copy code
+// server.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const routes = require('./routes');
+
+const app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
+app.use('/api', routes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+// routes.js
+const express = require('express');
+const { fetchRulesController, refreshRulesController } = require('./controllers');
+
+const router = express.Router();
+
+router.post('/fetchRules', fetchRulesController);
+router.get('/refreshRules', refreshRulesController);
+
+module.exports = router;
+
+// controllers.js
+const { fetchRules, validateSportInput, differentiateRulesBySeason, getTimeoutsAndChallenges } = require('./services');
+
+const fetchRulesController = async (req, res) => {
+  try {
+    const { sport, level, league, seasonType } = req.body;
+    if (!validateSportInput(sport)) {
+      return res.status(400).json({ error: 'Invalid sport input' });
+    }
+    const rules = await fetchRules(sport, level, league, seasonType);
+    const differentiatedRules = differentiateRulesBySeason(rules, seasonType);
+    const timeoutsChallenges = getTimeoutsAndChallenges(rules);
+    res.json({ rules: differentiatedRules, timeoutsChallenges });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch rules' });
+  }
+};
+
+const refreshRulesController = async (req, res) => {
+  try {
+    await refreshRules();
+    res.status(200).json({ message: 'Rules refreshed successfully' });
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to refresh rules' });
+  }
+};
+
+module.exports = { fetchRulesController, refreshRulesController };
+
+// services.js
+const axios = require('axios');
+const { Rules } = require('./models');
+
+const fetchRules = async (sport, level, league, seasonType) => {
+  const rules = await Rules.findOne({ sport, level, league, seasonType });
+  if (!rules) {
+    const response = await axios.get('API_URL');
+    // Process and save the data
+    return response.data;
+  }
+  return rules;
+};
+
+const validateSportInput = (sport) => {
+  const validSports = ['football', 'basketball', 'hockey', 'baseball'];
+  return validSports.includes(sport.toLowerCase());
+};
+
+const differentiateRulesBySeason = (rules, seasonType) => {
+  // Logic to adjust rules based on season type
+  return rules;
+};
+
+const getTimeoutsAndChallenges = (rules) => {
+  // Extract timeouts and challenges information
+  return {
+    timeouts: rules.timeouts,
+    challenges: rules.challenges,
+  };
+};
+
+const refreshRules = async () => {
+  const response = await axios.get('API_URL');
+  // Process and store the data in the database
+  await Rules.create(response.data);
+};
+
+module.exports = { fetchRules, validateSportInput, differentiateRulesBySeason, getTimeoutsAndChallenges, refreshRules };
+
+// models.js
+const mongoose = require('mongoose');
+
+const rulesSchema = new mongoose.Schema({
+  sport: String,
+  level: String,
+  league: String,
+  seasonType: String,
+  overtimeRules: String,
+  timeouts: Number,
+  challenges: Number,
+});
+
+const Rules = mongoose.model('Rules', rulesSchema);
+
+module.exports = { Rules };
+3. Data Layer
+Technology: MongoDB
+
+a. Schema Design
+Rules Collection:
+Fields:
+sport: String, required.
+level: String, required.
+league: String, required.
+seasonType: String, required.
+overtimeRules: String, required.
+timeouts: Number, optional.
+challenges: Number, optional.
+Indexes:
+Indexed on sport, level, league, and seasonType for quick lookup.
+b. Example Data Entry
+json
+Copy code
+{
+  "sport": "football",
+  "level": "college",
+  "league": "NCAA",
+  "seasonType": "regular",
+  "overtimeRules": "Each team gets one possession starting at the opponent's 25-yard line...",
+  "timeouts": 3,
+  "challenges": 1
+}
+Explanation
+Frontend: Uses React to create a dynamic user interface where users can input data and view the results. Components are divided into input forms, display areas, and a countdown clock for real-time updates.
+Backend: Uses Node.js and Express to handle API requests from the frontend. It includes validation, fetching rules from a database or external API, and processing rules based on season type. Controllers manage business logic, while services handle data fetching and processing.
+Data Layer: Uses MongoDB to store and retrieve rules data. The schema is designed to efficiently store and query rules based on user inputs.
+This low-level design ensures a clear and maintainable code structure, facilitating efficient development and easy future enhancements.
+
+
+
+
 Main Execution:
 	
 
