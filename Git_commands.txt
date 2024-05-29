@@ -52,6 +52,9 @@ code .
 
 https://lnkd.in/programming-foundations-vc-git
 
+git add .gitignore
+
+
 
 
 
