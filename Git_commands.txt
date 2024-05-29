@@ -1,0 +1,68 @@
+Git commands
+
+git --version
+
+git status
+git init
+git branch
+git add
+git commit
+git push
+
+git branch
+
+(change name from master)
+git branch -m main
+
+use clear command to clear command prompt/terminal
+cls
+
+
+to stage
+git add test.txt
+git add .
+
+
+to unstage
+git rm --cached test.txt
+
+to commit
+git commit
+git commit -m "added test file"
+
+configure in git global config under users/rmata
+git config --global user.name rmatarazzo
+git config --global user.email rmatarazzo@comcast.net
+
+
+after create repository on GitHub use command on local terminal to link/connect to remote repository
+git remote add origin https://github.com/rmatarazzo/git_practice.git
+
+
+git push
+git push --set-upstream origin main
+
+
+to restore it from GitHub if deleted on local
+git clone https://github.com/rmatarazzo/git_practice.git
+
+how to open VS code in a terminal
+code .
+
+
+https://lnkd.in/programming-foundations-vc-git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

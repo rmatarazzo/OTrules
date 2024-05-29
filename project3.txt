@@ -1,0 +1,74 @@
+Data Science & Analytics Project Definition (Template):
+
+Updated: 2024.05.17
+
+Project Name: a descriptive title (should be "catchy" for marketing purposes) Overtime Rules
+
+Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sentences)
+	• Answer "This project / work product (solution) fills these gaps...
+	Quickly identify the current overtime rules for the 4 major sports (football, basketball, hockey, and baseball) for college and 	professional levels in men and women leagues.  Program will display the rules for chosen team and differentiate between preseason, 	regular season, and playoff rules.  Program will provide format to send/text the rules to inputted contact.
+	• Main goals and problem(s) it solves.
+	To quickly identify the overtime rules for a major sports game and be able to supply them to others.
+	• Problem and Solution Workflow Diagrams (2 flowcharts "AS-IS" and "TO-BE")
+
+    "A problem clearly stated is a problem half-solved." - Dorothea Brande :
+
+
+Description of Solution:  (should be CONCISE, 3-7 sentences)
+	• Software functions for solving problem(s) step by step.
+	
+	locate and create input list of four (football, basketball, baseball, and hockey) major sports leagues for men/women college and 	professional levels. 
+	locate and input overtime rules for each of the sports leagues.
+	separate overtime rules for preseason, regular season, and playoffs.
+	ask user to enter sport
+	ask user to enter league
+	output to string file
+	• Workflow diagram of future ("TO-BE") state (improved processes from your solution).
+	• "Minimum Viable Product" (MVP) 1.0 delivered.  (V1.x delivered beyond MVP V1.0?)
+	• Later MVP, i.e., v2, v3, vN+ functionality to be delivered? 
+    • Additional requirements, Graphical User Interfaces (GUI), usability, etc. for later versions
+    
+Solution Design (high-level):
+	Load a JSON file containing overtime rules for various sports.
+	Create and display a plain-text list of all overtime rules.
+	Allow the user to select a specific sport and league to view the detailed overtime rules for the selected league.
+
+Solution Code Description (low-level design): 
+	• Describe code (to help users understand it.)
+	-Data Loading:
+	Input: overtime_rules.json (a JSON file containing nested dictionaries of overtime rules).
+	Output: A Python dictionary representing the loaded overtime rules.
+	Process: Read the JSON file and parse its content into a Python dictionary using the json module.
+	-Create Overtime Rules List:
+	Input: The dictionary of overtime rules.
+	Output: A formatted string listing all overtime rules in a human-readable format.
+	Process: Iterate through the nested dictionary, format each rule, and build a list of strings. Finally, join the list into a 	single string with newline characters.
+	-User Selection Interface:
+	Input: User inputs to select a sport and a league.
+	Output: Selected sport and league as strings.
+	Process: Display available sports, prompt user to select a sport, display leagues for the selected sport, prompt user to select a 	league, and return the selected sport and league.
+	-Print Overtime Rules:
+	Input: The dictionary of rules for the selected sport and league.
+	Output: Printed rules in a human-readable format.
+	Process: Format and print each rule in the selected league's rules dictionary.
+Main Execution:
+	
+
+Process: Orchestrates the flow of the program by calling the functions in sequence, handling user interactions, and displaying results.
+	• Hyperlinks to actual complete code  
+
+Actual Working Product Code: 
+    Functions, modules, packages, documentation 
+    
+Application Instructions:
+
+    • Step-by-step instructions for OTHERS:
+        Instructions to install, set-up, and use your software:
+        Everything needed to get your solution working.   
+            Software packages and tools
+            Configuration, data sets, URLs, input and output folder structure, etc. 
+        
+    • Additional Important Guidelines for Product Usability (for others to use your work products:
+
+
+
