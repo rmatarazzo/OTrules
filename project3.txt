@@ -2,14 +2,21 @@ Data Science & Analytics Project Definition (Template):
 
 Updated: 2024.05.17
 
-Project Name: a descriptive title (should be "catchy" for marketing purposes) OTrules
+Project Name: "OT Rules"
+
+	a descriptive title (should be "catchy" for marketing purposes) 
 
 Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sentences)
+
 	• Answer "This project / work product (solution) fills these gaps...
+
 	Quickly identify the current overtime rules for the 4 major sports (football, basketball, hockey, and baseball) for college and professional levels in men and women leagues.  If sport is not one of the major 4, enduser can input the sport manually to get the over time rules for the same levels/leagues.  Program will display the rules for chosen team and differentiate between preseason, regular season, and playoff rules.  Program will also provide the amount of timeouts and challenges if applicable along with a countdown clock for the overtime period.
+
 	• Main goals and problem(s) it solves.
 	To quickly identify the overtime rules for a major sports game.
+
 	• Problem and Solution Workflow Diagrams (2 flowcharts "AS-IS" and "TO-BE")
+
 	Start
 	Choose Sport
 	If one of the major 4, proceed to Choose Level
@@ -20,6 +27,7 @@ Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sente
 	Load Overtime Rules
 	Display Rules
 	End
+
     "A problem clearly stated is a problem half-solved." - Dorothea Brande :
 
 
