@@ -5,7 +5,7 @@ Updated: 2024.05.17
 Project Name: "OT Rules"
 	
 Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sentences)
-	Retrieve and display current overtime rules for football, basketball, hockey, and baseball across men's and women's college and professional leagues. Differentiate between preseason, regular season, and playoff rules, and provide timeout and challenge details if relevant. Present all information, including an overtime countdown clock, on a web page dashboard.
+	Retrieve and display current overtime rules for football, basketball, hockey, and baseball across men's and women's college and professional leagues. Differentiate between preseason, regular season, and playoff overtime rules, and provide timeout and challenge details if relevant. Present all information, including an overtime countdown clock, on a web page dashboard.
 		
 	• Answer "This project / work product (solution) fills these gaps... 
 		This project fills these gaps by providing a comprehensive solution for retrieving and displaying current overtime rules across various sports, including football, basketball, hockey, and baseball, in both men's and women's college and professional leagues. It addresses the need for easily accessible and differentiated rules for different game types (preseason, regular season, playoffs), along with timeout and challenge details, if applicable. Additionally, it offers the convenience of presenting all this information on a web page dashboard, complete with an overtime countdown clock.
@@ -14,30 +14,22 @@ Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sente
 		The main goals of this project are to streamline the process of accessing and understanding overtime rules across different sports and leagues. It solves the problem of manual search and comparison by automating the retrieval and differentiation of rules. Furthermore, it enhances user experience by presenting the information in a clear and organized manner on a web page dashboard, facilitating quick reference and decision-making during games.
 	
 	• Problem and Solution Workflow Diagrams (2 flowcharts "AS-IS" and "TO-BE")
+		AS-IS Workflow Diagram (Textual Representation):
+		flowchart TD
+    		A[User Search] --> B[Data Collection]
+    		B --> C[Comparison]
+    		C --> D[Presentation]
+
+		TO-BE Workflow Diagram (Textual Representation):
+		flowchart TD
+    		A[User Input] --> B[Rule Retrieval]
+    		B --> C[Differentiation]
+    		C --> D[Display Information]
+    		D --> E[Web Page]
+
+
+    "A problem clearly stated is a problem half-solved." - Dorothea Brande :
 	
-
-    "A problem clearly stated is a problem half-solved." - Dorothea Brande :
-	• Main goals and problem(s) it solves.
-
-	Identify and provide the current overtime rules for football, basketball, hockey, and baseball across college and professional 	men's and women's leagues.
-
-	• Problem and Solution Workflow Diagrams (2 flowcharts "AS-IS" and "TO-BE")
-
-	AS-IS Workflow Diagram (Textual Representation):
-	flowchart TD
-    	A[User Search] --> B[Data Collection]
-    	B --> C[Comparison]
-    	C --> D[Presentation]
-
-	TO-BE Workflow Diagram (Textual Representation):
-	flowchart TD
-    	A[User Input] --> B[Rule Retrieval]
-    	B --> C[Differentiation]
-    	C --> D[Display Information]
-    	D --> E[Web Page]
-
-
-    "A problem clearly stated is a problem half-solved." - Dorothea Brande :
 
 
 Description of Solution:  (should be CONCISE, 3-7 sentences)
