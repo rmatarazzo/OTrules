@@ -5,7 +5,6 @@ Updated: 2024.05.17
 Project Name: "OT Rules"
 	
 Project and Work Product Description:  (should be 1 CONCISE paragraph, 3-7 sentences)
-
 	Retrieve and display current overtime rules for football, basketball, hockey, and baseball across men's and women's college and professional leagues. Differentiate between preseason, regular season, and playoff rules, and provide timeout and challenge details if relevant. Present all information, including an overtime countdown clock, on a web page dashboard.
 		
 	• Answer "This project / work product (solution) fills these gaps... 
