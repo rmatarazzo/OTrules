@@ -67,36 +67,35 @@ Description of Solution:  (should be CONCISE, 3-7 sentences)
 
 	• Software functions for solving problem(s) step by step.
 	
-	User Input Collection
+		1. User Input Collection
+			Function Name: get_user_input()
+			Purpose: Collect user preferences for sport, league, and game type.
+			Details: This function prompts the user to select a sport (football, basketball, hockey, or baseball), a league (college or professional), and a game type (preseason, regular season, or playoffs). It then returns the collected inputs for further processing.
 
-Function Name: get_user_input()
-Purpose: Collect user preferences for sport, league, and game type.
-Details: This function prompts the user to select a sport (football, basketball, hockey, or baseball), a league (college or professional), and a game type (preseason, regular season, or playoffs). It then returns the collected inputs for further processing.
-Database Query
+		2. Database Query
+			Function Name: query_overtime_rules(sport, league, game_type)
+			Purpose: Retrieve overtime rules from the database based on user input.
+			Details: This function connects to the database and constructs a query using the provided sport, league, and game type. It executes the query to fetch the relevant overtime rules and returns the results.
+		
+		3. Data Differentiation
+			Function Name: differentiate_rules(rules)
+			Purpose: Differentiate and format rules for preseason, regular season, and playoffs.
+			Details: This function processes the retrieved rules to ensure they are clearly differentiated and formatted according to the game type (preseason, regular season, or playoffs). It returns the formatted rules.
 
-Function Name: query_overtime_rules(sport, league, game_type)
-Purpose: Retrieve overtime rules from the database based on user input.
-Details: This function connects to the database and constructs a query using the provided sport, league, and game type. It executes the query to fetch the relevant overtime rules and returns the results.
-Data Differentiation
+		4. Timeouts and Challenges Extraction
+			Function Name: get_timeouts_and_challenges(rules)
+			Purpose: Extract information about timeouts and challenges, if applicable.
+			Details: This function parses the differentiated rules to extract specific details about timeouts and challenges that may apply during the overtime period. It returns the extracted information.
 
-Function Name: differentiate_rules(rules)
-Purpose: Differentiate and format rules for preseason, regular season, and playoffs.
-Details: This function processes the retrieved rules to ensure they are clearly differentiated and formatted according to the game type (preseason, regular season, or playoffs). It returns the formatted rules.
-Timeouts and Challenges Extraction
+		5. Countdown Clock Setup
+			Function Name: setup_countdown_clock(overtime_duration)
+			Purpose: Initialize a countdown clock for the overtime period.
+			Details: This function sets up a countdown timer based on the provided overtime duration. It initializes and configures the countdown clock, returning it for display on the web interface.
 
-Function Name: get_timeouts_and_challenges(rules)
-Purpose: Extract information about timeouts and challenges, if applicable.
-Details: This function parses the differentiated rules to extract specific details about timeouts and challenges that may apply during the overtime period. It returns the extracted information.
-Countdown Clock Setup
-
-Function Name: setup_countdown_clock(overtime_duration)
-Purpose: Initialize a countdown clock for the overtime period.
-Details: This function sets up a countdown timer based on the provided overtime duration. It initializes and configures the countdown clock, returning it for display on the web interface.
-Web Page Display
-
-Function Name: display_on_web_page(rules, timeouts, challenges, countdown_clock)
-Purpose: Display the retrieved and formatted information on a web page.
-Details: This function renders the differentiated rules, timeouts, and challenges information on the web page. Additionally, it displays the initialized countdown clock, ensuring all information is presented clearly and comprehensively on the web dashboard.
+		6. Web Page Display
+			Function Name: display_on_web_page(rules, timeouts, challenges, countdown_clock)
+			Purpose: Display the retrieved and formatted information on a web page.
+			Details: This function renders the differentiated rules, timeouts, and challenges information on the web page. Additionally, it displays the initialized countdown clock, ensuring all information is presented clearly and comprehensively on the web dashboard.
 
 	• "Minimum Viable Product" (MVP) 1.0 delivered.  (V1.x delivered beyond MVP V1.0?)
 	• Later MVP, i.e., v2, v3, vN+ functionality to be delivered? 
