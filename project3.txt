@@ -98,8 +98,12 @@ Description of Solution:  (should be CONCISE, 3-7 sentences)
 			Details: This function renders the differentiated rules, timeouts, and challenges information on the web page. Additionally, it displays the initialized countdown clock, ensuring all information is presented clearly and comprehensively on the web dashboard.
 
 	• "Minimum Viable Product" (MVP) 1.0 delivered.  (V1.x delivered beyond MVP V1.0?)
-	• Later MVP, i.e., v2, v3, vN+ functionality to be delivered? 
+	V1 uses dictionary database
+	• Later MVP, i.e., v2, v3, vN+ functionality to be delivered?
+	V2 uses an external database
+	V3 outputs a realtime clock and realtime tracking of time outs and challenges 
     • Additional requirements, Graphical User Interfaces (GUI), usability, etc. for later versions
+	to be determined
     
 Solution Design (high-level):
 	Solution Design (High-Level)
