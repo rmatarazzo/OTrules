@@ -106,16 +106,195 @@ Description of Solution:  (should be CONCISE, 3-7 sentences)
 	to be determined
     
 Solution Design (high-level):
-	Solution Design (High-Level)
-This low-level design ensures a clear and maintainable code structure, facilitating efficient development and easy future enhancements.
+
+High-Level Solution Design for the Program
+Objective:
+To create a program that retrieves, differentiates, and displays current overtime rules for football, basketball, hockey, and baseball across men's and women's college and professional leagues. The program will also provide information on timeouts and challenges and display an overtime countdown clock on a web page dashboard.
+
+Components and Workflow:
+User Interface (UI)
+
+Web Page Dashboard:
+Input Forms: Allow users to select sport, league, and game type.
+Display Area: Show retrieved rules, timeouts, challenges, and the countdown clock.
+Backend Logic
+
+User Input Handling:
+
+Collect user preferences for sport, league, and game type.
+Database Interaction:
+
+Query the database to fetch overtime rules based on user input.
+Data Processing:
+
+Differentiate and format rules for preseason, regular season, and playoffs.
+Extract specific information about timeouts and challenges.
+Countdown Timer Setup:
+
+Initialize and manage a countdown clock for the overtime period.
+Data Storage
+
+Database:
+Store detailed overtime rules for different sports, leagues, and game types.
+Ensure the database is structured to facilitate efficient querying and retrieval.
+Detailed Steps:
+User Input Collection:
+
+User accesses the web page and selects the desired sport, league, and game type.
+The input is submitted to the backend for processing.
+Database Query:
+
+Based on user input, the backend constructs a query to fetch the relevant overtime rules from the database.
+The query results are returned to the backend for further processing.
+Data Differentiation:
+
+The retrieved rules are processed to differentiate and format them according to the game type (preseason, regular season, playoffs).
+Timeouts and Challenges Extraction:
+
+Specific information about timeouts and challenges is extracted from the differentiated rules.
+Countdown Clock Setup:
+
+A countdown clock is initialized based on the standard overtime duration for the selected sport and game type.
+The clock is configured to count down the specified duration.
+Web Page Display:
+
+The formatted rules, timeouts, challenges, and the countdown clock are rendered on the web page dashboard.
+The user can view all the relevant information clearly and interactively.
+Technical Components:
+Frontend:
+
+HTML/CSS/JavaScript: For creating the web page interface and managing user interactions.
+Frameworks/Libraries: Optional use of frontend frameworks like React or Vue.js for enhanced UI/UX.
+Backend:
+
+Python/Flask/Django: For handling user input, processing data, and interacting with the database.
+APIs: Optional use of APIs for fetching real-time data if needed.
+Database:
+
+SQL/NoSQL Database: To store and manage overtime rules data.
+Schema Design: Ensure the database schema supports efficient queries and data retrieval.
+
+Solution Code Description (low-level design): 
+	• Describe code (to help users understand it.)
+	The program is designed to automate the process of retrieving, differentiating, and displaying overtime rules for various sports across different leagues and game types. It involves user input collection, database querying, data processing, countdown timer setup, and displaying the information on a web page.
+
+	Detailed Description of Each Component:
+
+1. User Input Collection
+Function Name: get_user_input()
+Description: This function prompts the user to select a sport, league, and game type. It collects these preferences and returns them for further processing.
+
+def get_user_input():
+    """
+    Collect user preferences for the sport, league, and game type.
+    """
+    sport = input("Select sport (football, basketball, hockey, baseball): ")
+    league = input("Select league (college, professional): ")
+    game_type = input("Select game type (preseason, regular season, playoffs): ")
+    return sport, league, game_type
+
+2. Database Query
+Function Name: query_overtime_rules(sport, league, game_type)
+Description: This function constructs and executes a query to fetch overtime rules from the database based on the provided sport, league, and game type. It returns the retrieved rules.
+
+def query_overtime_rules(sport, league, game_type):
+    """
+    Retrieve overtime rules from the database based on user input.
+    """
+    # Example mock database query (replace with actual database logic)
+    rules = {
+        'football': {
+            'college': {'preseason': 'College football preseason OT rules...',
+                        'regular_season': 'College football regular season OT rules...',
+                        'playoffs': 'College football playoff OT rules...'},
+            'professional': {'preseason': 'NFL preseason OT rules...',
+                             'regular_season': 'NFL regular season OT rules...',
+                             'playoffs': 'NFL playoff OT rules...'}
+        },
+        # Add rules for other sports...
+    }
+    return rules.get(sport, {}).get(league, {}).get(game_type, 'Rules not found')
+
+3. Data Differentiation
+
+Function Name: differentiate_rules(rules)
+Description: This function processes the retrieved rules to ensure they are clearly differentiated for preseason, regular season, and playoffs. It returns the formatted rules.
+
+def differentiate_rules(rules):
+    """
+    Differentiate and format rules for preseason, regular season, and playoffs.
+    """
+    # Assuming rules are already differentiated in the database, return them as-is
+    return rules
+
+4. Timeouts and Challenges Extraction
+
+Function Name: get_timeouts_and_challenges(rules)
+Description: This function extracts specific details about timeouts and challenges from the differentiated rules. It returns the extracted information.
+
+def get_timeouts_and_challenges(rules):
+    """
+    Extract information about timeouts and challenges from the rules.
+    """
+    # Example mock extraction logic (replace with actual extraction logic)
+    timeouts = "3 timeouts per team"
+    challenges = "2 challenges per team"
+    return timeouts, challenges
+
+5. Countdown Clock Setup
+
+Function Name: setup_countdown_clock(overtime_duration)
+Description: This function initializes and configures a countdown clock for the overtime period based on the provided duration. It returns the initialized countdown clock.
+
+def setup_countdown_clock(overtime_duration):
+    """
+    Initialize a countdown clock for the overtime period.
+    """
+    countdown_clock = f"{overtime_duration} minutes countdown clock"
+    return countdown_clock
+
+6. Web Page Display
+
+Function Name: display_on_web_page(rules, timeouts, challenges, countdown_clock)
+Description: This function renders the differentiated rules, timeouts, challenges, and countdown clock on a web page dashboard, ensuring all information is presented clearly.
+
+def display_on_web_page(rules, timeouts, challenges, countdown_clock):
+    """
+    Display the retrieved and formatted information on a web page.
+    """
+    # Example mock display logic (replace with actual web display logic)
+    print(f"Overtime Rules: {rules}")
+    print(f"Timeouts: {timeouts}")
+    print(f"Challenges: {challenges}")
+    print(f"Countdown Clock: {countdown_clock}")
+
+Main Program Execution
+Main Function:
+
+Function Name: main()
+Description: This is the main function that coordinates the execution of all other functions. It collects user input, queries the database, processes the data, sets up the countdown clock, and displays the information on the web page.
+
+def main():
+    """
+    Main function to run the program.
+    """
+    sport, league, game_type = get_user_input()
+    rules = query_overtime_rules(sport, league, game_type)
+    differentiated_rules = differentiate_rules(rules)
+    timeouts, challenges = get_timeouts_and_challenges(differentiated_rules)
+    countdown_clock = setup_countdown_clock(overtime_duration=10)  # Assume 10 minutes for example
+    display_on_web_page(differentiated_rules, timeouts, challenges, countdown_clock)
+
+if __name__ == "__main__":
+    main()
 
 
 
 
-Main Execution:
-	
 
-Process: Orchestrates the flow of the program by calling the functions in sequence, handling user interactions, and displaying results.
+
+
+
 	• Hyperlinks to actual complete code  
 
 Actual Working Product Code: 
@@ -130,6 +309,7 @@ Application Instructions:
             Configuration, data sets, URLs, input and output folder structure, etc. 
         
     • Additional Important Guidelines for Product Usability (for others to use your work products:
+
 
 
 
