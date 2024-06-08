@@ -288,6 +288,15 @@ def main():
 if __name__ == "__main__":
     main()
 
+Summary:
+User Input Collection: Gathers user preferences for sport, league, and game type.
+Database Query: Retrieves the relevant overtime rules from the database.
+Data Differentiation: Formats and differentiates the rules for various game types.
+Timeouts and Challenges Extraction: Extracts details about timeouts and challenges.
+Countdown Clock Setup: Initializes a countdown timer for the overtime period.
+Web Page Display: Renders all the information on a web page dashboard for user viewing.
+This low-level design provides a detailed description of each function and its role in the overall process, ensuring a clear understanding of the program's functionality and workflow.
+
 
 
 
