@@ -1,0 +1,52 @@
+Set1
+
+1. question: Specific Leagues for Each Sport: Could you provide the exact leagues you want to include for each sport at both the college and professional levels for men and women? For example, for basketball, do you want to include the NBA, WNBA, NCAA Men's, and NCAA Women's leagues?
+
+1. answer: The men's professional leagues are NFL (National Football League), NBA (National Basketball Association), MLB (Major League Baseball), and NHL (National Hockey League).
+The women's professional leagues are WFA (Women's Football Alliance), WNBA (Women's National Basketball Association), and PWHL (Professional Women's Hockey League).
+The men's college level leagues are FBS, (NCAA Division I Football Bowl Subdivision), FCS (NCAA Division I Football Championship Subdivision, NCAA Division I Basketball, NCAA Division I Baseball, NCAA Division I Hockey.
+The women's college level leagues are NCAA Division I Womens Football, NCAA Division I Women's Basketball, NCAA Womens Division I Hockey.
+
+2. question: Structure of the Input: How would you like the user to input the league? Should it be a selection from a predefined list, and if so, do you want the input to be case-insensitive?
+2. answer: It should be a selection from a predefined list and the input should be case-insensitive.
+
+3. question: Handling Different Leagues: How should the program handle leagues with different rules within the same sport, level, and game type? Should it differentiate and display rules for each selected league separately, or should it combine them into a single set of rules?
+3. answer: It should differentiate and display rules for each selected league separately.
+
+Set2
+
+1. question: Sport and Level Prompt Sequence: How should the user input be sequenced? Should the program first ask for the sport, then the level, and finally the specific league? For example, the flow would be: "Select sport" -> "Select level" -> "Select league".
+1. answer: The program should first ask for the sport, then the level, and finally the specific league.
+
+2. question: Data Structure for Rules: Given the variety of leagues and levels, would you prefer the rules database to be structured in a nested dictionary format (e.g., sport -> level -> league -> game type) to handle the differentiation more clearly, or do you have another preferred data structure in mind?
+2. answer: I would prefer the rules database to be structured in a nested dictionary format (e.g., sport -> level -> league -> game type)
+
+3. question: Additional Features on Web Page: Besides displaying the overtime rules, timeouts, challenges, and countdown clock, are there any additional features or information you would like to include on the web page? For instance, would you like to show historical data, recent changes in rules, or league-specific regulations?
+3. answer: There are no other additional features or information I would like to include on the web page at this time.
+
+Set3
+
+1. question: User Experience: Would you prefer the user interface for input to be text-based (e.g., command line) or a graphical user interface (GUI) for better user experience? Additionally, would you like any validation checks or error messages to guide the user if they input invalid data?
+1. answer: I would prefer the user interface for input to be a graphical user interface (GUI) for better user experience.  Yes, I would like validation checks or error messages to guide the user if they input invalid data.
+
+2. question: Display Format: How would you like the information to be displayed on the web page? Should it be in a simple text format, or do you prefer a more structured layout with sections and headings for each type of information (e.g., separate sections for rules, timeouts, challenges, and countdown clock)?
+2. answer: I would like the information to be displayed on the web page in a more structured layout with sections and headings for each type of information (e.g., separate sections for rules, timeouts, challenges, and countdown clock).
+
+3. question: Frequency of Rule Updates: How often do you anticipate the overtime rules to change, and how would you like to handle updates to the rules database? Would you prefer a manual update process, or should the program include functionality to periodically check and update the rules automatically?
+3. answer: I would prefer a manual update process for now.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
