@@ -1,0 +1,390 @@
+RULES_DATABASE = {
+    'football': {
+        'professional': {
+            'nfl': {
+                'preseason': {
+                    'overview': 'NFL preseason overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 3,
+                    'challenges': 2
+                },
+                'regular_season': {
+                    'overview': 'NFL regular season overtime rules...',
+                    'duration': 10,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 2,
+                    'challenges': 2
+                },
+                'playoffs': {
+                    'overview': 'NFL playoff overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'no',
+                    'timeouts': 3,
+                    'challenges': 2
+                }
+            },
+            'wfa': {
+                'preseason': {
+                    'overview': 'WFA preseason overtime rules...',
+                    'duration': 10,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'WFA regular season overtime rules...',
+                    'duration': 10,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'WFA playoff overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'no',
+                    'timeouts': 3,
+                    'challenges': 2
+                }
+            }
+        },
+        'college': {
+            'ncaa_mens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Mens D1 preseason overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Mens D1 regular season overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Mens D1 playoff overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            },
+            'ncaa_womens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Womens D1 preseason overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Womens D1 regular season overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Womens D1 playoff overtime rules...',
+                    'duration': 15,
+                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            }
+        }
+    },
+    'basketball': {
+        'professional': {
+            'nba': {
+                'preseason': {
+                    'overview': 'NBA preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NBA regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NBA playoff overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            },
+            'wnba': {
+                'preseason': {
+                    'overview': 'WNBA preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'WNBA regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'WNBA playoff overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            }
+        },
+        'college': {
+            'ncaa_mens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Mens D1 preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Mens D1 regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Mens D1 playoff overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            },
+            'ncaa_womens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Womens D1 preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Womens D1 regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Womens D1 playoff overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'Team with the most points wins',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            }
+        }
+    },
+    'baseball': {
+        'professional': {
+            'mlb': {
+                'preseason': {
+                    'overview': 'MLB preseason overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 2
+                },
+                'regular_season': {
+                    'overview': 'MLB regular season overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 2
+                },
+                'playoffs': {
+                    'overview': 'MLB playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 2
+                }
+            }
+        },
+        'college': {
+            'ncaa_mens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Mens D1 preseason overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Mens D1 regular season overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Mens D1 playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Each team gets a turn to bat and field',
+                    'sudden_death': 'no',
+                    'timeouts': 2,
+                    'challenges': 1
+                }
+            }
+        }
+    },
+    'hockey': {
+        'professional': {
+            'nhl': {
+                'preseason': {
+                    'overview': 'NHL preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NHL regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NHL playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                }
+            },
+            'pwhl': {
+                'preseason': {
+                    'overview': 'PWHL preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'PWHL regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'PWHL playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                }
+            }
+        },
+        'college': {
+            'ncaa_mens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Mens D1 preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Mens D1 regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Mens D1 playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                }
+            },
+            'ncaa_womens_d1': {
+                'preseason': {
+                    'overview': 'NCAA Womens D1 preseason overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'regular_season': {
+                    'overview': 'NCAA Womens D1 regular season overtime rules...',
+                    'duration': 5,
+                    'scoring_rules': 'First team to score wins',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                },
+                'playoffs': {
+                    'overview': 'NCAA Womens D1 playoff overtime rules...',
+                    'duration': 20,
+                    'scoring_rules': 'Play continues until a winner is decided',
+                    'sudden_death': 'yes',
+                    'timeouts': 1,
+                    'challenges': 1
+                }
+            }
+        }
+    }
+}
