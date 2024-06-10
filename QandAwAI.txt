@@ -36,6 +36,65 @@ Set3
 3. answer: I would prefer a manual update process for now.
 
 
+Instruction:
+Please do not write any code.  I want to update the RULES_DATABASE dictionary with the following updates:  The men's professional leagues are NFL (National Football League), NBA (National Basketball Association), MLB (Major League Baseball), and NHL (National Hockey League).
+The women's professional leagues are WFA (Women's Football Alliance), WNBA (Women's National Basketball Association), and PWHL (Professional Women's Hockey League).
+The men's college level leagues are NCAA Mens D1 (NCAA Division I Mens Football), NCAA Mens D1 (NCAA Division I Mens Basketball), NCAA Mens D1 (NCAA Division I Mens Baseball), NCAA Mens D1 (NCAA Division I Mens Hockey).
+The women's college level leagues are NCAA Womens D1 (NCAA Division I Womens Football), NCAA Womens D1 (NCAA Division I Women's Basketball), NCAA Womens D1 (NCAA Womens Division I Hockey).  Please ask me three clarifying questions regarding this update.
+
+Set1
+
+1. question: Naming Conventions for College Levels: For both men's and women's college level leagues, you have listed "NCAA Mens D1" and "NCAA Womens D1" for multiple sports (e.g., football, basketball). Should we differentiate these within the dictionary by including the sport in the key (e.g., ncaa_mens_d1_football, ncaa_mens_d1_basketball) to avoid any ambiguity?
+2. answer: We should not have to as the sport is picked first before the league and the same league name is used for multiple mens and womens sports.
+
+2. question: Structure of the Dictionary: Should the dictionary structure follow a nested format that includes the sport at the top level, followed by the level (college or professional), and then the specific league? For example:
+2. answer: Yes, the dictionary structure should follow a nested format that includes the sport at the top level, followed by the level (college or professional), and then the specific league.  Your example look almost the way I would like, however I would like the level order to be professional then college.
+
+3. question: Detailed Rules for Each League: Do you have specific overtime rules, timeouts, and challenges information for each league, or should we use the example data provided earlier for the initial setup? If you have specific rules, could you provide details for each league?
+3. answer: I don't have specific overtime rules, timeouts, and challenges information for each league yet so you should use the example data provided earlier for the initial setup.
+
+Set2
+
+1. question: Handling Duplicate League Names: Since the same league name is used for multiple men's and women's sports at the college level (e.g., "NCAA Mens D1"), would you prefer the dictionary to handle these cases by using a nested structure that separates men’s and women’s categories explicitly within each sport? For example:
+1. answer: No, I would rather aviod further nesting and use NCAA Mens D1 and NCAA Womens D1 as the league names since the name reflects whether it is a mens or womens league.
+
+2. question: Level Display Order: Since the dictionary should be structured with the level order as professional first, followed by college, how would you like this order to be reflected in the user interface for selecting the level? Should the dropdown menu for levels also display "Professional" first and then "College"?
+2. answer: Yes, the user interface for selecting the level should display "Professional" first and then "College in the dropdown menu for levels.
+
+3. question: Initial Data Validation: Would you like the program to include an initial data validation step to ensure that all expected sports, levels, and leagues are present in the RULES_DATABASE? This could help catch any missing entries or inconsistencies early on.
+3. answer: Yes.
+
+Set3
+
+1. question: Overtime Rules Format: How would you like the overtime rules to be presented within the dictionary? Should the rules be detailed and broken down into specific components (e.g., duration, scoring rules, sudden death, etc.), or would a single descriptive text field suffice for now?
+1. answer: The rules should be broken down into specific components (decrtiptive text overview, duration, scoring rules, sudden death, timeouts, and challenges).
+
+2. question: Timeouts and Challenges Information: For the timeouts and challenges information, would you prefer to have them in a nested dictionary under each league with separate keys for timeouts and challenges, or should they be included as part of the same dictionary entry as the overtime rules?
+1. answer: I would prefer to have them in a nested dictionary under each league and under each game type with separate keys for decrtiptive text overview, duration, scoring rules, sudden death, timeouts, and challenges.
+
+3. question: User Interface Design: Would you like the GUI to provide additional information or options when selecting a sport or level? For instance, should there be descriptions or tooltips explaining what each level or league entails to assist users in making their selections?
+3. answer: No.
+
+Set4
+1. question: Data Structure for Specific Components: For each component of the overtime rules (descriptive text overview, duration, scoring rules, sudden death, timeouts, and challenges), should there be any specific format or constraints on the data? For example, should the duration always be in minutes, or should the scoring rules follow a specific syntax or structure?
+1. answer: For each component of the overtime rules the format or constraint is as follows: 
+descriptive text overview not more than a paragraph
+duration in minutes less than 720
+scoring rules in order of importance
+sudden death will be either a yes or no
+timeouts a positive integer number less than 5
+challenges a positive integer number less than 5 
+
+2. question: Updating the Rules Database: Considering the nested structure for the overtime rules, timeouts, and challenges, how would you like to manage updates to this data? Should there be a specific format for submitting updates (e.g., a structured form or CSV file), and who would be responsible for these updates?
+2. answer: We will address this later.
+
+
+
+
+
+
+
+
 
 
 
