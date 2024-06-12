@@ -3,35 +3,31 @@ RULES_DATABASE = {
         'professional': {
             'nfl': {
                 'preseason': {
-                    'overview': 'NFL preseason overtime rules...',
-                    'duration': 15,
-                    'scoring_rules': 'First team to score wins',
-                    'sudden_death': 'yes',
-                    'timeouts': 3,
-                    'challenges': 2
+                    'overview': 'There are no NFL preseason overtime games due to player safety concerns.',
+                    'duration': 0,
+                    'sudden_death': 'None',
+                    'timeouts': 0,
+                    'challenges': 0
                 },
                 'regular_season': {
-                    'overview': 'NFL regular season overtime rules...',
+                    'overview': 'In an NFL regular season overtime, if the receiving team scores a touchdown on its first possession, they win. If they score a field goal, the opposing team gets a possession. If the opposing team scores a touchdown, they win; if they tie with a field goal, the game continues in sudden death. If no one scores in 10 minutes, the game ends in a tie.',
                     'duration': 10,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 2,
-                    'challenges': 2
+                    'challenges': 0
                 },
                 'playoffs': {
-                    'overview': 'NFL playoff overtime rules...',
+                    'overview': 'NFL playoff overtime follows a similar structure to the regular season, but with key differences: multiple 15-minute periods are played if needed, and both teams are guaranteed at least one possession regardless of the first team's score. The game ends when a team scores (touchdown, field goal, or safety) after both teams have had an equal chance with the ball.',
                     'duration': 15,
-                    'scoring_rules': 'Play continues until a winner is decided',
-                    'sudden_death': 'no',
+                    'sudden_death': 'yes',
                     'timeouts': 3,
-                    'challenges': 2
+                    'challenges': 0
                 }
             },
             'wfa': {
                 'preseason': {
                     'overview': 'WFA preseason overtime rules...',
                     'duration': 10,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 2,
                     'challenges': 1
@@ -39,7 +35,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'WFA regular season overtime rules...',
                     'duration': 10,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 2,
                     'challenges': 1
@@ -47,7 +42,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'WFA playoff overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Play continues until a winner is decided',
                     'sudden_death': 'no',
                     'timeouts': 3,
                     'challenges': 2
@@ -59,7 +53,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Mens D1 preseason overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -67,7 +60,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Mens D1 regular season overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -75,7 +67,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Mens D1 playoff overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -85,7 +76,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Womens D1 preseason overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -93,7 +83,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Womens D1 regular season overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -101,7 +90,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Womens D1 playoff overtime rules...',
                     'duration': 15,
-                    'scoring_rules': 'Teams alternate possessions from the 25-yard line',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -115,7 +103,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NBA preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 1,
                     'challenges': 1
@@ -123,7 +110,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NBA regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -131,7 +117,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NBA playoff overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -141,7 +126,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'WNBA preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 1,
                     'challenges': 1
@@ -149,7 +133,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'WNBA regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -157,7 +140,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'WNBA playoff overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -169,7 +151,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Mens D1 preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 1,
                     'challenges': 1
@@ -177,7 +158,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Mens D1 regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -185,7 +165,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Mens D1 playoff overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -195,7 +174,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Womens D1 preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 1,
                     'challenges': 1
@@ -203,7 +181,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Womens D1 regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -211,7 +188,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Womens D1 playoff overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'Team with the most points wins',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -225,7 +201,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'MLB preseason overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 2
@@ -233,7 +208,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'MLB regular season overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 2
@@ -241,7 +215,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'MLB playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 2
@@ -253,7 +226,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Mens D1 preseason overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -261,7 +233,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Mens D1 regular season overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -269,7 +240,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Mens D1 playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Each team gets a turn to bat and field',
                     'sudden_death': 'no',
                     'timeouts': 2,
                     'challenges': 1
@@ -283,7 +253,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NHL preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -291,7 +260,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NHL regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -299,7 +267,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NHL playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Play continues until a winner is decided',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -309,7 +276,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'PWHL preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -317,7 +283,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'PWHL regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -325,7 +290,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'PWHL playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Play continues until a winner is decided',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -337,7 +301,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Mens D1 preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -345,7 +308,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Mens D1 regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -353,7 +315,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Mens D1 playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Play continues until a winner is decided',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -363,7 +324,6 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'NCAA Womens D1 preseason overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -371,7 +331,6 @@ RULES_DATABASE = {
                 'regular_season': {
                     'overview': 'NCAA Womens D1 regular season overtime rules...',
                     'duration': 5,
-                    'scoring_rules': 'First team to score wins',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1
@@ -379,7 +338,6 @@ RULES_DATABASE = {
                 'playoffs': {
                     'overview': 'NCAA Womens D1 playoff overtime rules...',
                     'duration': 20,
-                    'scoring_rules': 'Play continues until a winner is decided',
                     'sudden_death': 'yes',
                     'timeouts': 1,
                     'challenges': 1

@@ -89,6 +89,18 @@ challenges a positive integer number less than 5
 2. answer: We will address this later.
 
 
+Dictionary value questions and answers:
+
+There are no NFL preseason overtime games due to player safety concerns.
+
+What are the scoring rules in an NFL regular season overtime game? Please be concise.
+
+In an NFL regular season overtime, if the receiving team scores a touchdown on its first possession, they win. If they score a field goal, the opposing team gets a possession. If the opposing team scores a touchdown, they win; if they tie with a field goal, the game continues in sudden death. If no one scores in 10 minutes, the game ends in a tie.
+
+What are the number of timeouts and challenges in an NFL regular season overtime game? Please be concise.
+
+In an NFL regular season overtime, each team has two timeouts. Teams do not receive additional challenges; they carry over any remaining challenges from regulation.
+
 
 
 
