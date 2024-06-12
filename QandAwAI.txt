@@ -89,7 +89,8 @@ challenges a positive integer number less than 5
 2. answer: We will address this later.
 
 
-Dictionary value questions and answers:
+Dictionary value questions and answers (ChatGPT/Gemini):
+
 
 There are no NFL preseason overtime games due to player safety concerns.
 
@@ -100,6 +101,42 @@ In an NFL regular season overtime, if the receiving team scores a touchdown on i
 What are the number of timeouts and challenges in an NFL regular season overtime game? Please be concise.
 
 In an NFL regular season overtime, each team has two timeouts. Teams do not receive additional challenges; they carry over any remaining challenges from regulation.
+
+What are the scoring rules in an NFL playoff overtime game? Please be concise.
+
+NFL playoff overtime follows a similar structure to the regular season, but with key differences: multiple 15-minute periods are played if needed, and both teams are guaranteed at least one possession regardless of the first team's score. The game ends when a team scores (touchdown, field goal, or safety) after both teams have had an equal chance with the ball.
+
+What are the number of timeouts and challenges in an NFL playoff overtime game? Please be concise.
+
+In an NFL playoff overtime game, each team receives three timeouts per half (considering each overtime period a separate "half"). There are no coach's challenges during overtime; replay reviews are initiated by the replay official.
+
+
+There are no WFA preseason overtime games.
+
+What are the scoring rules in a WFA regular season overtime game? Please be concise.
+
+In a WFA (Women's Football Alliance) regular season overtime game, each team gets one possession starting from the opponent's 25-yard line. If the score remains tied after both teams have had a possession, the process repeats until a winner is determined. If the game remains tied after two overtime periods, it ends in a tie.
+
+What are the number of timeouts and challenges in a WFA regular season overtime game? Please be concise.
+
+In a WFA regular season overtime game, each team has two timeouts. Challenges are not allowed in WFA games.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
