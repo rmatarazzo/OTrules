@@ -5,7 +5,7 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'There are no NFL preseason overtime games due to player safety concerns.',
                     'duration': 0,
-                    'sudden_death': 'None',
+                    'sudden_death': 'none',
                     'timeouts': 0,
                     'challenges': 0
                 },
@@ -26,14 +26,14 @@ RULES_DATABASE = {
             },
             'wfa': {
                 'preseason': {
-                    'overview': 'WFA preseason overtime rules...',
-                    'duration': 10,
-                    'sudden_death': 'yes',
-                    'timeouts': 2,
-                    'challenges': 1
+                    'overview': 'No overtime',
+                    'duration': 0,
+                    'sudden_death': 'none',
+                    'timeouts': 0,
+                    'challenges': 0
                 },
                 'regular_season': {
-                    'overview': 'WFA regular season overtime rules...',
+                    'overview': 'In a WFA (Women's Football Alliance) regular season overtime game, each team gets one possession starting from the opponent's 25-yard line. If the score remains tied after both teams have had a possession, the process repeats until a winner is determined. If the game remains tied after two overtime periods, it ends in a tie.',
                     'duration': 10,
                     'sudden_death': 'yes',
                     'timeouts': 2,
