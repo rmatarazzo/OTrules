@@ -121,6 +121,55 @@ What are the number of timeouts and challenges in a WFA regular season overtime 
 
 In a WFA regular season overtime game, each team has two timeouts. Challenges are not allowed in WFA games.
 
+What are the scoring rules in a WFA playoff overtime game? Please be concise.
+
+In a WFA playoff overtime game, each team gets one possession from the opponent's 25-yard line. The process repeats until a winner is determined. No ties are allowed.
+
+What are the number of timeouts and challenges in a WFA playoff overtime game? Please be concise.
+
+
+Fill in rest of dictionary:
+
+
+Set1
+
+1. question: Clarification on Source of Information for Other Leagues:
+For the remaining leagues and their game types (preseason, regular season, playoffs) across other sports (basketball, baseball, hockey), should we use a specific source or standard for the overtime rules? For instance, should we look into the official rulebooks for each sport, or do you have another preferred source of information?
+1. answer: For the remaining leagues and their game types (preseason, regular season, playoffs) across other sports (basketball, baseball, hockey), use standard for the overtime rules from the official rulebooks for each sport.
+
+2. question: Details for College Leagues:
+Regarding the college leagues, should we assume the overtime rules for men's and women's leagues are the same within each sport, or do we need to look up and differentiate the rules for each gender specifically? For example, NCAA men's and women's basketball may have different overtime rules. How would you like these handled?
+2. answer: Regarding the college leagues, assume the overtime rules for men's and women's leagues need to be looked up and differentiate the rules for each gender specifically.  For example, NCAA men's and women's basketball may have different overtime rules. If the rules for the women's league cannot be found then default to the men's league rules.
+
+Set2
+
+1. question:  Handling Missing Information:
+In cases where specific information (such as detailed rules for certain leagues) is not readily available from official rulebooks, how would you like the program to handle these gaps? Should it notify the user that the information is missing, provide a placeholder, or attempt to find the closest matching rules from a related league?
+2. answer: In cases where specific information (such as detailed rules for certain leagues) is not readily available from official rulebooks, attempt to find the closest matching rules from a related league.
+
+2. question: Updates and Maintenance:
+Given that sports rules can occasionally change, how would you prefer to handle updates and maintenance of this dictionary? Should there be a periodic review process, or would you prefer to implement a notification system that alerts administrators when a rule change is detected in the official rulebooks?
+2. answer: I would prefer to handle updates and maintenance of this dictionary as a periodic review process.
+
+Set3
+
+1. question: User Interaction with Missing Data:
+When the program finds and applies the closest matching rules from a related league due to missing specific information, would you like the user to be informed about this substitution? If so, should the program display a notification or message on the web page indicating that the displayed rules are based on the closest available match?
+1. answer: When the program finds and applies the closest matching rules from a related league due to missing specific information, inform the user about this substitution by displaying a notification or message on the web page indicating that the displayed rules are based on the closest available match.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
