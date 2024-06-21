@@ -160,6 +160,27 @@ When the program finds and applies the closest matching rules from a related lea
 
 
 
+CHAT with Multiple PDFs
+
+Must change league and game type for each sport.
+
+NFL (preseason, regular, post season)
+
+1. question: What is an overview of an NFL overtime game in regular season?  Please be concise.
+
+2. question: How long is an NFL regular season overtime period?
+
+3. question: How many timeouts does each team have in an NFL regular season overtime period?
+
+4. question: How many challenges does a team have in an NFL regular season overtime period?
+
+5. question: Is NFL regular season overtime period considered sudden death?
+
+
+
+
+
+
 
 
 

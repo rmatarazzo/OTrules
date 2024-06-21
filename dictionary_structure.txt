@@ -5,21 +5,21 @@ RULES_DATABASE = {
                 'preseason': {
                     'overview': 'There are no NFL preseason overtime games due to player safety concerns.',
                     'duration': 0,
-                    'sudden_death': 'none',
+                    'sudden_death': 'no',
                     'timeouts': 0,
                     'challenges': 0
                 },
                 'regular_season': {
-                    'overview': 'In an NFL regular season overtime, if the receiving team scores a touchdown on its first possession, they win. If they score a field goal, the opposing team gets a possession. If the opposing team scores a touchdown, they win; if they tie with a field goal, the game continues in sudden death. If no one scores in 10 minutes, the game ends in a tie.',
+                    'overview': 'In the regular season of an NFL game, if the score is tied at the end of regulation, there will be an extra period of 10 minutes. Both teams must have the opportunity to possess the ball at least once, unless the team receiving the initial kickoff scores a touchdown. If the team possessing the ball first does not score, the next scoring team wins. If the team with the initial possession scores a field goal, the other team gets a possession. If the game is still tied after the extra period, it will end in a tie.',
                     'duration': 10,
-                    'sudden_death': 'yes',
-                    'timeouts': 2,
+                    'sudden_death': 'no',
+                    'timeouts': 3,
                     'challenges': 0
                 },
                 'playoffs': {
-                    'overview': 'NFL playoff overtime follows a similar structure to the regular season, but with key differences: multiple 15-minute periods are played if needed, and both teams are guaranteed at least one possession regardless of the first team's score. The game ends when a team scores (touchdown, field goal, or safety) after both teams have had an equal chance with the ball.',
+                    'overview': 'In NFL playoff overtime games, there is a modified sudden-death overtime system in effect. Following an intermission of no more than three minutes after the end of the regular game, an extra period of 15 minutes shall commence. Both teams must have the opportunity to possess the ball at least once during the extra period unless the team kicking off to start the overtime period scores a safety on the receiving team's initial possession, in which case the team that kicked off is the winner. After each team has had an opportunity to possess the ball, if one team has more points than its opponent, it is the winner. If the score is tied after each team has had its opportunity to possess the ball, the team next scoring by any method shall be the winner.',
                     'duration': 15,
-                    'sudden_death': 'yes',
+                    'sudden_death': 'no',
                     'timeouts': 3,
                     'challenges': 0
                 }
@@ -33,7 +33,7 @@ RULES_DATABASE = {
                     'challenges': 0
                 },
                 'regular_season': {
-                    'overview': 'In a WFA (Women's Football Alliance) regular season overtime game, each team gets one possession starting from the opponent's 25-yard line. If the score remains tied after both teams have had a possession, the process repeats until a winner is determined. If the game remains tied after two overtime periods, it ends in a tie.',
+                    'overview': 'In the WFA regular season, overtime consists of each team having one possession from the opponent's 10-yard line with the opportunity to score. If the score remains tied after both possessions, the game ends in a tie.',
                     'duration': 10,
                     'sudden_death': 'yes',
                     'timeouts': 2,
